@@ -57,9 +57,9 @@ def TestOneInput(data):
 
     
     if data[1] % 2 == 0:
-        sys.argv = "detools create_patch -c none a b c".split(' ')
+        sys.argv = "detools create_patch -c none a.out b.out c.patch".split(' ')
     else:
-        sys.argv = "detools create_patch -c lzma a b c".split(' ')
+        sys.argv = "detools create_patch -c lzma a.out b.out c.patch".split(' ')
     
     with suppress_stdout_stderr():
         _main()
